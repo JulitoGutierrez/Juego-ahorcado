@@ -1,0 +1,47 @@
+
+body {
+    background-image: url(../imagen/fondo.jpg);
+    background-size: cover;
+}
+
+.titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 75px;
+    color: darkorange;
+    text-align: center;
+}
+
+.boton{
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    margin-top: 2%;
+    width: 150px;
+    border-radius: 0.5em;
+    box-shadow: 5px;
+}
+.centrar{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ingreso-texto{
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    display: block;
+    width: 275px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 0.5em;
+}
+.invisible{
+	display: none;
+}
