@@ -1,13 +1,10 @@
 var pantalla = document.querySelector("canvas");
 var pincel = pantalla.getContext("2d");
 
-var img = new Image();
-img.src = "imagen/emoji.png";
 
-//pincel.fillStyle = "transparent";
-pincel.fillRect(0, 0, 1000, 800);
+pincel.fillStyle = "transparent";
+pincel.fillRect(0, 0, 1200 , 800);
 pincel.lineWidth = 3;
-
 
 
 //BASE
@@ -44,20 +41,21 @@ function soga() {
   pincel.strokeStyle = "orange";
   pincel.stroke();
 }
-
+// var img = new Image();
+// img.src = "imagen/emoji.png";
 //CABEZA
-function cabeza() {
-  img.onload = function () {
-    pincel.drawImage(img, 275, 150, 50, 50);
-  };
-}
-// OTRA CABEZA (comentar anterior y descomentar esta)
 // function cabeza() {
-// pincel.fillStyle = "transparent";
-// pincel.beginPath();
-// pincel.arc(300,175,25,0,2*3.14);
-// pincel.fill();
+//   img.onload = function () {
+//     pincel.drawImage(img, 275, 150, 50, 50);
+//   };
 // }
+// OTRA CABEZA (comentar anterior y descomentar esta)
+function cabeza() {
+pincel.fillStyle = "transparent";
+pincel.beginPath();
+pincel.arc(300,175,25,0,2*3.14);
+pincel.fill();
+}
 
 //TORSO
 function torso() {
